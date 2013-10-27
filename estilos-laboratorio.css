@@ -1,5 +1,7 @@
+/* importando fuente desde google web fonts */
 @import url(http://fonts.googleapis.com/css?family=Bigelow+Rules);
-.button { 
+
+.boton { 
   font-weight: bold;
   background-color: #A69520;
   text-transform: uppercase;
@@ -25,8 +27,59 @@
   background: -o-linear-gradient(#FFF089, #A69520);
   background: linear-gradient(top center, #FFF089, #A69520);
   /*END:gradient*/
+}
 
-background: #CCC;
-color: #black;
-font-family: 'Bigelow Rules'
+.colores{
+  color: #e58b24;
+  font-family: 'Bigelow Rules', cursive;
+  font-size: 42px;
+}
+
+.animacion{
+  /* No funciona en IE9 */
+  animation: mymove 5s infinite;
+  -webkit-animation: mymove 5s infinite; /* Safari y Chrome*/
+  -moz-animation: mymove 5s infinite;
+  -o-animation: mymove 5s infinite;
+  position: relative;
+}
+
+/* Agregando los valores de la animacion a través de keyframes de CSS3 */ 
+@keyframes mymove
+{
+  from {
+    left: 0px;
+  }
+  to {
+    left: 200px;
+  }
+}
+
+@-webkit-keyframes mymove
+{
+  from {
+    left: 0px;
+  }
+  to {
+    left: 200px;
+  }
+}
+@-moz-keyframes mymove
+{
+  from {
+    left: 0px;
+  }
+  to {
+    left: 200px;
+  }
+}
+
+@-o-keyframes mymove
+{
+  from {
+    left: 0px;
+  }
+  to {
+    left: 200px;
+  }
 }
